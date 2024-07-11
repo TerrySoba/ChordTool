@@ -11,6 +11,12 @@ public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void chordSelectionChanged();
+
+private:
+    Ui::MainWindow m_ui;
+
 };
 
 #endif

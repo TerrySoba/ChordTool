@@ -30,7 +30,10 @@ add_library(ChordToolLib STATIC
 
 
 # Link the required Qt6 libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Core Qt6::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    Qt6::Core
+    Qt6::Widgets
+    ChordToolLib)
 
 add_executable(ChordToolTests
     tests/testmain.cpp

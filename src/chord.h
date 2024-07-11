@@ -5,11 +5,15 @@
 
 #include <string>
 #include <vector>
+#include <map>
 
 enum class ChordType {
     Major, Minor, Dominant7, Major7, Minor7,
 };
 
+
+std::string chordTypeToString(ChordType type);
+std::vector<ChordType> getChordTypes();
 
 class Chord {
 public:
